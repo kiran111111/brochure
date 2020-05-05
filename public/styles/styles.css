@@ -22,6 +22,30 @@ body {
   fill: #2f1ce0;
 }
 
+.head__container .mobile__nav {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  z-index: 10;
+  width: 100%;
+}
+
+.head__container .mobile__nav ul {
+  background-color: white;
+  z-index: 99;
+}
+
+.head__container .mobile__nav ul li {
+  border-bottom: 0.5px solid #bbbbbb;
+}
+
+.head__container .mobile__nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
 .head__container .head__wrapper {
   position: relative;
 }
@@ -34,7 +58,7 @@ body {
 .head__container .head__wrapper .head__inner {
   position: absolute;
   top: 0;
-  z-index: 999;
+  z-index: 9;
   width: 100%;
   height: 99.5%;
   background: rgba(46, 46, 46, 0.4);
@@ -84,33 +108,55 @@ body {
 
 .head__container .head__wrapper .head__inner nav .head__navbar ul li a {
   color: white;
+  position: relative;
   text-decoration: none;
   font-size: 1.1rem;
   padding: 1rem;
 }
 
-.head__container .head__wrapper .head__inner .head__contactDetails {
+.head__container .head__wrapper .head__inner nav .mobile__navbar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: black;
+}
+
+.head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon {
+  top: 3rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon i {
+  display: none;
+  color: white;
+}
+
+.head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon i:hover {
+  cursor: pointer;
+}
+
+.head__container .head__wrapper .head__inner nav .mobile__navbar .show {
+  display: block;
+}
+
+.head__container .head__wrapper .head__contactDetails {
   z-index: -1;
   position: absolute;
   top: 7rem;
 }
 
-.head__container .head__wrapper .head__inner .head__contactDetails h4 {
+.head__container .head__wrapper .head__contactDetails h4 {
   margin: 0 2rem;
 }
 
-.head__container .head__wrapper .head__inner .head__contactDetails h4 i {
+.head__container .head__wrapper .head__contactDetails h4 i {
   padding: 0.5rem;
   font-size: 1.5rem;
   color: #214fe7;
 }
 
-.head__container .head__wrapper .head__inner .active {
-  background-image: white;
-  color: black;
-}
-
-.head__container .head__wrapper .head__inner .head__description {
+.head__container .head__wrapper .head__description {
   margin-top: 13rem;
   margin-bottom: 3rem;
   display: block;
@@ -118,28 +164,28 @@ body {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.head__container .head__wrapper .head__inner .head__description h3 {
+.head__container .head__wrapper .head__description h3 {
   font-size: 3rem;
   letter-spacing: 2px;
 }
 
-.head__container .head__wrapper .head__inner .head__button {
+.head__container .head__wrapper .head__button {
   text-align: center;
 }
 
-.head__container .head__wrapper .head__inner .head__button button {
+.head__container .head__wrapper .head__button button {
   background-color: #2F5BEA;
   border: 1px solid #2F5BEA;
   border-radius: 30px;
   padding: 1rem 2rem;
 }
 
-.head__container .head__wrapper .head__inner .head__button button:hover {
+.head__container .head__wrapper .head__button button:hover {
   background-color: #3a5fda;
   border: 1px solid #375bd1;
 }
 
-.head__container .head__wrapper .head__inner .head__button button a {
+.head__container .head__wrapper .head__button button a {
   text-decoration: none;
   color: white;
   padding: 2rem;
@@ -261,6 +307,27 @@ body {
     font-size: 0.8rem;
     padding: 0.5rem;
   }
+  .head__container .head__wrapper .head__inner nav .mobile__navbar {
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+    color: black;
+  }
+  .head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon {
+    top: 3rem;
+    right: 2rem;
+    font-size: 1.4rem;
+  }
+  .head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon i {
+    display: block;
+    color: white;
+  }
+  .head__container .head__wrapper .head__inner nav .mobile__navbar .mobile__icon i:hover {
+    cursor: pointer;
+  }
+  .head__container .head__wrapper .head__inner nav .mobile__navbar .show {
+    display: block;
+  }
   .head__container .head__wrapper .head__inner .head__contactDetails {
     z-index: -1;
     position: absolute;
@@ -278,16 +345,17 @@ body {
   }
   .head__container .head__wrapper .head__inner .head__description {
     margin: 0 2rem;
-    margin-top: 7rem;
+    margin-top: 3.5rem;
     margin-bottom: 1.3rem;
   }
   .head__container .head__wrapper .head__inner .head__description h3 {
-    font-size: 1.5rem;
+    display: none;
+    font-size: 1.2rem;
     letter-spacing: 2px;
   }
   .head__container .head__wrapper .head__inner .head__button {
     text-align: center;
-    margin-top: -3rem;
+    margin-top: 7rem;
   }
   .head__container .head__wrapper .head__inner .head__button button {
     padding: 0.5rem;
@@ -300,6 +368,11 @@ body {
     padding: 1rem;
     font-size: 0.9rem;
   }
+}
+
+.active {
+  background-color: #c5c5c5;
+  color: white;
 }
 
 .about__container {
@@ -498,6 +571,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .feature__container .feature__wrapper .feature__blocks .feature__blocks--box {
@@ -507,8 +583,9 @@ body {
   padding: 1rem;
   padding-bottom: 2rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
+      -ms-flex: 1 0 28vw;
+          flex: 1 0 28vw;
+  max-width: 29vw;
   margin: 0.8rem;
   text-align: left;
 }
@@ -569,6 +646,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 40%;
             flex: 1 0 40%;
+    max-width: 41vw;
   }
 }
 
@@ -592,6 +670,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 80%;
             flex: 1 0 80%;
+    max-width: 100%;
   }
 }
 

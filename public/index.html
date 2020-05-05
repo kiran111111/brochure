@@ -18,42 +18,56 @@
  <body>
   <div class="page__container">
    <div class="page__wrapper">
-    <header id="home">
-     <div  class="head__container">
-      <div class="head__wrapper">
-        <img src="./images/back1.jpg">
-        <div class="head__inner">
-       <nav  style="display:flex" class="head__nav">
-           <div class="head__titlebar">
-                <!-- <div class="head__image">
-                    <img src="images/tile.png"> 
-                </div> -->
-            <h2 class="head__title">Royal Traders</h2>
-          </div>
-           <div class="head__navbar">
-            <ul>
-                <li><a class="page-scroll" href="#home">Home</a></li>
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#features">Features</a></li>
-                <li><a class="page-scroll" href="#products">Products</a></li>
-                <li><a class="page-scroll" href="#contact">Contacts</a></li>
-            </ul>
+     </header>
+      <div id="home" class="head__container">
+       <div class="head__wrapper">
+        <div class="mobile__nav">
+          <ul class="mobile__list">
+              <li class="mobile__list--line"><a class="page-scroll" href="#home">Home</a></li>
+              <li class="mobile__list--line"><a class="page-scroll" href="#about">About</a></li>
+              <li class="mobile__list--line"><a class="page-scroll" href="#features">Features</a></li>
+              <li class="mobile__list--line"><a class="page-scroll" href="#products">Products</a></li>
+              <li class="mobile__list--line"><a class="page-scroll" href="#contact">Contacts</a></li>
+          </ul>
+         </div>
+         <img src="./images/back1.jpg">
+         <div class="head__inner">
+           <nav  id="nav" style="display:flex" class="head__nav">
+            <div class="head__titlebar">
+                 <!-- <div class="head__image">
+                     <img src="images/tile.png"> 
+                 </div> -->
+             <h2 class="head__title">Royal Traders</h2>
            </div>
-       </nav>
-       <div class="head__contactDetails">
-        <h4><i class="fa fa-phone"></i>... +91 99147-99789</h4>
-        <h4><i class="fa fa-address-card"></i> 85, Royal Traders , Trimmo Road , GSP.</h4>
+            <div class="head__navbar">
+             <ul>
+                 <li><a class="page-scroll" href="#home">Home</a></li>
+                 <li><a class="page-scroll" href="#about">About</a></li>
+                 <li><a class="page-scroll" href="#features">Features</a></li>
+                 <li><a class="page-scroll" href="#products">Products</a></li>
+                 <li><a class="page-scroll" href="#contact">Contacts</a></li>
+             </ul>
+            </div>
+            <div class="mobile__navbar">
+              <div class="mobile__icon">
+                <i class="fa fa-bars"><a href="#home"></a></i>
+              </div>
+            </div>
+        </nav>
+        <div class="head__contactDetails">
+         <h4><i class="fa fa-phone"></i>... +91 99147-99789</h4>
+         <h4><i class="fa fa-address-card"></i> 85, Royal Traders , Trimmo Road , GSP.</h4>
+        </div>
+        <div class="head__description">
+            <h3>For  Exceptional Services Start With Us</h3>
+        </div>
+        <div class="head__button">
+            <button><a  href="#about">About Us</a></button>
+        </div>
        </div>
-       <div class="head__description">
-           <h3>For  Exceptional Services Start With Us</h3>
-       </div>
-       <div class="head__button">
-           <button><a class="page-scroll" href="#about">About Us</a></button>
        </div>
       </div>
-      </div>
-     </div>
-    </header>
+     </header>
     <main>
      <section>
       <div id="about" class="about__container">
@@ -124,7 +138,7 @@
                   </div>
                   <div class="feature__blocks--box">
                     <div class="feature__blocks--icon">
-                      <i class="fa fa-mobile"></i>
+                      <i class="fa fa-users"></i>
                     </div>
                     <h3>User Friendly</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. 
@@ -138,14 +152,14 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. 
                       Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.</p>
                   </div>
-                  <div class="feature__blocks--box">
+                  <!-- <div class="feature__blocks--box">
                     <div class="feature__blocks--icon">
                       <i class="fa fa-mobile"></i>
                     </div>
                     <h3>User Friendly</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. 
                       Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non.</p>
-                  </div>
+                  </div> -->
                   <div class="feature__blocks--box">
                     <div class="feature__blocks--icon">
                       <i class="fa fa-mobile"></i>
@@ -214,7 +228,7 @@
      <section>
        <div class="review__container">
          <div class="review__wrapper">
-           <h3>Reviews</h3>
+           <h3>Testimonials</h3>
           <div class="review__slide">
            <div class="review__person">
              <p>This is a very amzing place with efficient service and fast results.</p>
