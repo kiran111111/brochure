@@ -1,12 +1,5 @@
 
 
-// image gallery
-$('.gallery-item').magnificPopup({
- type: 'image',
- gallery:{
-   enabled:true
- }
-});
 
 
 // review --slider
@@ -29,7 +22,7 @@ function showSlides(n){
 }
 
 
-// accordian
+// accordian--for___FAQs
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -52,7 +45,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-// ?Navbar change on scroll -*****************
+// Navbar change on scroll -*****************
 
 $(document).ready(function(){
   $(window).scroll(function() { // check if scroll event happened
@@ -92,7 +85,7 @@ $(document).ready(function(){
 
 
 
-//?jQuery for page scrolling feature - requires jQuery Easing plugin(****************)
+//jQuery for page scrolling feature - requires jQuery Easing plugin(****************)
 
 $(function() {
   $('a.page-scroll').on('click', function(event) {
@@ -109,12 +102,6 @@ $(function() {
 
 
 
-// ? Pop up for the contact information--------
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
 
 
 

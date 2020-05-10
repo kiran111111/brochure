@@ -35,8 +35,6 @@ body{
 }
 
 
-
-
 .wave__container{
   z-index:-2;
  .wave__wrapper{
@@ -49,12 +47,8 @@ body{
 }
 
 
-
-
 // ?Header styles*******************************
 .head__container{
-  
-
   
   .mobile__nav{
     display:none;
@@ -73,7 +67,7 @@ body{
           padding:0.5rem;
           text-decoration:none;
           color:black;
-          font-size:0.9rem;
+          font-size:1rem;
         }
       }
     }
@@ -99,8 +93,8 @@ body{
         .head__titlebar{
           flex:1;
           h2{
-            font-size:4rem;
-            margin:0 2rem;
+            font-size:3rem;
+            margin:0 r2em;
             text-transform :uppercase;
             font-family: 'Oswald', sans-serif;
           }
@@ -118,7 +112,7 @@ body{
                 color:white;
                 position: relative;
                 text-decoration:none;
-                font-size:1.1rem;
+                font-size:1.3rem;
                 padding:1rem;
               }
             }
@@ -163,8 +157,8 @@ body{
       
 
   .head__description{
-       margin-top:13rem;
-       margin-bottom:3rem;
+       margin-top:14rem;
+       margin-bottom:-1rem;
         display:block;
         text-align:center;
         font-family: 'PT Sans Narrow', sans-serif;
@@ -174,6 +168,10 @@ body{
          }
       }
       .head__button{
+        position:absolute;
+        z-index:-1;
+        margin-top:6rem;
+        transform: translateX(40vw);
         text-align:center;
         button{
           background-color: #2F5BEA;
@@ -194,10 +192,6 @@ body{
       }
     }
   }
-
-
-
-
 
 
 @media screen and (max-width:800px){
@@ -274,15 +268,13 @@ body{
 }
 
 
-
-
 @media screen and (max-width:600px){
   .head__container{
     .head__wrapper{
       position:relative;
       img{
         width:100%;
-        height:auto;
+        height:300px;
       }
       .head__inner{
         nav{
@@ -347,10 +339,10 @@ body{
           h4{
             margin:0 0.5rem;
             padding:0;
-            font-size:0.7rem;
+            font-size:0.9rem;
             i{
               padding:0.1rem 0.5rem;
-              font-size:0.8rem;
+              font-size:1rem;
               color:rgb(35, 80, 226);
             }
           }
@@ -367,8 +359,11 @@ body{
            }
         }
         .head__button{
+          position: absolute;
           text-align:center;
-          margin-top:7rem;
+          transform: translateX(35vw);
+          top:8rem;
+          z-index:-1;
           button{
             padding:0.5rem;
             &:hover{
@@ -390,8 +385,6 @@ body{
   background-color: rgb(197, 197, 197);
   color:white;
 }
-
-
 
 
 // ! TODO: Make it responsive ... Brain is not funcitoning properly now so i cant do it now I can just create a normal thing noew :,)
@@ -459,7 +452,6 @@ body{
   }
  }
 
-
 @media screen and (max-width:900px){
   .about__container{
     .about__wrapper{
@@ -483,7 +475,6 @@ body{
     }
   }
 }
-
 
 @media screen and (max-width:600px){
   .about__container{
@@ -573,7 +564,6 @@ body{
   }
 }
 
-
 @media screen and (max-width:900px){
   .feature__container{
     .feature__wrapper{
@@ -598,8 +588,6 @@ body{
  }
 }
 
-
-
 @media screen and (max-width:600px){
   .feature__container{
     .feature__wrapper{
@@ -623,7 +611,6 @@ body{
 
  
 // Styling the product section
-
 .product__container{
   .product__wrapper{ 
     max-width:1280px;
@@ -655,7 +642,6 @@ body{
   }
 }
 
-
 @media screen and (max-width:800px){
   .product__container{
     .product__wrapper{ 
@@ -679,9 +665,6 @@ body{
     }
   }
 }
-
-
-
 
 @media screen and (max-width:600px){
   .product__container{
@@ -782,7 +765,6 @@ body{
   }
 }
 
-
 @media screen and (max-width:800px){
   .review__container{
     margin:5rem 0;
@@ -825,10 +807,6 @@ body{
     }
   }
 }
-
-
-
-
 
 @media screen and (max-width:600px){
   .review__container{
@@ -896,6 +874,7 @@ body{
          text-align: left;
        }
        .panel{
+        
          width:90%;
          padding:1rem;
          display:none;
@@ -904,8 +883,12 @@ body{
          background-color: white;
          box-shadow:0px 0px 10px lightgrey;
          color:black;
-         font-size:1.5rem;
+         font-size:0.9rem;
          text-align: left;
+        
+       }
+       .panel p{
+        font-size:1.2rem;
        }
        .accordion:after {
         content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -1003,7 +986,7 @@ body{
 .call__container{
   margin:3rem 0;
   .call__wrapper{
-    background-image:url("../images/phone.jpg");
+    background-image:url("../images/phone-min.jpg");
     height: 500px; 
     background-position: center; 
     background-repeat: no-repeat; 

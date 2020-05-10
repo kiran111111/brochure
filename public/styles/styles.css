@@ -43,7 +43,7 @@ body {
   padding: 0.5rem;
   text-decoration: none;
   color: black;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .head__container .head__wrapper {
@@ -83,8 +83,8 @@ body {
 }
 
 .head__container .head__wrapper .head__inner nav .head__titlebar h2 {
-  font-size: 4rem;
-  margin: 0 2rem;
+  font-size: 3rem;
+  margin: 0 r2em;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
@@ -110,7 +110,7 @@ body {
   color: white;
   position: relative;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 1rem;
 }
 
@@ -157,8 +157,8 @@ body {
 }
 
 .head__container .head__wrapper .head__description {
-  margin-top: 13rem;
-  margin-bottom: 3rem;
+  margin-top: 14rem;
+  margin-bottom: -1rem;
   display: block;
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -170,6 +170,11 @@ body {
 }
 
 .head__container .head__wrapper .head__button {
+  position: absolute;
+  z-index: -1;
+  margin-top: 6rem;
+  -webkit-transform: translateX(40vw);
+          transform: translateX(40vw);
   text-align: center;
 }
 
@@ -271,7 +276,7 @@ body {
   }
   .head__container .head__wrapper img {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
   .head__container .head__wrapper .head__inner nav {
     display: -webkit-box;
@@ -336,11 +341,11 @@ body {
   .head__container .head__wrapper .head__inner .head__contactDetails h4 {
     margin: 0 0.5rem;
     padding: 0;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .head__container .head__wrapper .head__inner .head__contactDetails h4 i {
     padding: 0.1rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #2350e2;
   }
   .head__container .head__wrapper .head__inner .head__description {
@@ -354,8 +359,12 @@ body {
     letter-spacing: 2px;
   }
   .head__container .head__wrapper .head__inner .head__button {
+    position: absolute;
     text-align: center;
-    margin-top: 7rem;
+    -webkit-transform: translateX(35vw);
+            transform: translateX(35vw);
+    top: 8rem;
+    z-index: -1;
   }
   .head__container .head__wrapper .head__inner .head__button button {
     padding: 0.5rem;
@@ -1011,8 +1020,12 @@ body {
   -webkit-box-shadow: 0px 0px 10px lightgrey;
           box-shadow: 0px 0px 10px lightgrey;
   color: black;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   text-align: left;
+}
+
+.faq__container .faq__wrapper .faq__accordian .panel p {
+  font-size: 1.2rem;
 }
 
 .faq__container .faq__wrapper .faq__accordian .accordion:after {
@@ -1121,7 +1134,7 @@ body {
 }
 
 .call__container .call__wrapper {
-  background-image: url("../images/phone.jpg");
+  background-image: url("../images/phone-min.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
