@@ -103,17 +103,3 @@ $(function() {
 
 
 
-
-
-//! Mobile_navbar
-// const hamburgerEl = document.querySelector(".mobile__icon");
-// const mobileNavEl = document.querySelector(".mobile__nav");
-// console.log(hamburgerEl)
-// hamburgerEl.addEventListener("click",function(){
-//   if(mobileNavEl.style.display="none"){
-//      mobileNavEl.style.display="block";
-//   }else{
-//     mobileNavEl.style.display="none";
-//   }
-// })
-
