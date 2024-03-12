@@ -2,7 +2,8 @@
 const express = require("express");
 const app = express();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
+console.log(PORT)
 
 // serve static files
 app.use(express.static(__dirname + "/public"));
